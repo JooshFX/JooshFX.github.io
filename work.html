@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JooshFX</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700&display=swap" rel="stylesheet">
+</head>
+
+<body class="preload">
+    <ul class="navbar">
+        <li>
+            <a href="index.html">Home</a>
+            <a href="work.html">Portfolio</a>
+            <a href="shop.html">Shop</a>
+            <a href="contact.html">Contact</a>
+        </li>
+    </ul>
+    <div class="cont" style="margin-top: 20vh;" id="workcont">
+        <h1 class="maintitle">Portfolio</h1>
+        <br>
+        <div class="vidcont">
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/JT8MK0-bIG4?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <br><br>
+        <a href="shop.html" class="btn">Place an order</a>
+    </div>
+    <script>
+    window.onload = function() {
+        document.querySelector('.preload').classList.remove('preload')
+    }
+    </script>
+</body>
+
+</html>
