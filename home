@@ -11,10 +11,10 @@
 <body class="preload">
 	<ul class="navbar">
 		<li>
-			<a href="index">Home</a>
-			<a href="work">Portfolio</a>
-			<a href="shop">Shop</a>
-            <a href="contact">Contact</a>
+			<a href="index.html">Home</a>
+			<a href="work.html">Portfolio</a>
+			<a href="shop.html">Shop</a>
+            <a href="contact.html">Contact</a>
 		</li>
 	</ul>
     <div class="cont" style="margin-top: 28vh;" id="homecont">
