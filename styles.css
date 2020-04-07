@@ -11,6 +11,10 @@
   -o-transition: none !important;
 }
 
+body {
+	background: var(--bg);
+}
+
 * {
 	font-family: 'Rubik', sans-serif;
 }
