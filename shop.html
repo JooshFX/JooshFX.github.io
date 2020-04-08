@@ -75,7 +75,12 @@
     	}
         const SHOP_CLOSED = false;
         
-        if (SHOP_CLOSED) document.querySelectorAll('.btn').forEach(s=>{s.addEventListener('click',e=>{prompt('Shop is current closed! Check out my free shop instead:','https://forms.gle/mfeoTbguiEwjkpK2A')})});
+        if (SHOP_CLOSED) {
+            document.querySelectorAll('.btn').forEach(s=>{s.addEventListener('click',e=>{
+                prompt('Shop is current closed! Check out my free shop instead:','https://forms.gle/mfeoTbguiEwjkpK2A');
+                window.location=window.location+'#';
+            })})
+        }
     </script>
 </body>
 
