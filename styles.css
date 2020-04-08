@@ -147,6 +147,7 @@ ul.navbar a {
 		padding: 1.5vw .8vw;
 		border: .6vw solid var(--hl);
 		border-radius: .1vw;
+		cursor: pointer;
 	}
 
 	.btn:hover {
