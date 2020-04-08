@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="JooshFX©.png" />
+    <script src="https://shoppy.gg/api/embed.js"></script>
 </head>
 
 <body class="preload">
@@ -22,20 +23,58 @@
     <div class="cont" style="margin-top: 16vh;" id="shopcont">
         <br>
         <ul>
-           
-            <li style="text-align:center;margin-top:2vh">
-                <h2>Shop Closed :(<br></h2>
+            <li style="text-align:left;margin-top:0vh">
+                <h2>Pro Intro<br>$ 5.50</h2>
+                <br>
+                <button class="btn"  data-shoppy-product="7Yach5Q">Purchase</button>
+            </li>
+            <li style="text-align:right;margin-top:-6.5vh">
+                <h2>Outro<br>$ 5.50</h2>
+                <br>
+                <button class="btn"  data-shoppy-product="QbHuGfD">Purchase</button>
+            </li>
+            <li style="text-align:left;margin-top:-6.5vh">
+                <h2>Lower Third<br>$ 3.25</h2>
+                <br>
+                <button class="btn"  data-shoppy-product="jwYpiVO">Purchase</button>
+            </li>
+            <li style="text-align:right;margin-top:-6.5vh">
+                <h2>2D Logo<br>$ 2.20</h2>
+                <br>
+                <button class="btn"  data-shoppy-product="vGQFEoM">Purchase</button>
+            </li>
+            <li style="text-align:left;margin-top:-6.5vh">
+                <h2>2D Banner<br>$ 2.70</h2>
+                <br>
+                <button class="btn"  data-shoppy-product="qVCuNWQ">Purchase</button>
+            </li>
+            <li style="text-align:right;margin-top:-6.5vh">
+                <h2>Edited Video<br>$ 20-40</h2>
+                <br>
+                <button class="btn"  data-shoppy-product="wNEBBHI">Purchase</button>
             </li>
             <li style="text-align:center;margin-top:2vh">
-                <h2>Sign My Free Form?<br></h2>
+                <h2>Want to buy a pack?<br></h2>
             </li>
-             <br><br>
-        <a href="https://forms.gle/mfeoTbguiEwjkpK2A" class="btn">Free Shop</a>
+            <li style="text-align:left;margin-top:2vh">
+                <h2>Simple Design Pack<br>$ 16.80</h2>
+                <br>
+                <button class="btn" data-shoppy-product="GZYcOkC">Purchase</button>
+            </li>
+            <li style="text-align:right;margin-top:-6.5vh">
+                <h2>Pro Design Pack<br>$ 19.00</h2>
+                <br>
+                <button class="btn" data-shoppy-product="sFbiSfL">Purchase</button>
+            </li>
         
         </ul>
     </div>
     <script>
-    
+    <script>
+        const SHOP_CLOSED = false;
+        
+        if (SHOP_CLOSED) document.querySelectorAll('.btn').forEach(s=>{s.addEventListener('click',e=>{prompt('Shop is current closed! Check out my free shop instead:','https://forms.gle/mfeoTbguiEwjkpK2A')})});
+    </script>
 </body>
 
 </html>
