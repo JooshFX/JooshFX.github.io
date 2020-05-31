@@ -21,10 +21,11 @@ body {
 }
 
 @font-face {
-  font-family: 'Youtube Sans';
-  src: url('YouTube-Sans-Medium.eot');
-  src: local('YouTube-Sans-Bold'), local('Youtube Sans'),
-    url(YouTube-Sans-Bold.otf") format("opentype"),
+    font-family: 'youtube_sansbold';
+    src: url('youtube-sans-bold-webfont.woff2') format('woff2'),
+         url('youtube-sans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 .cont {
