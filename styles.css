@@ -20,17 +20,11 @@ body {
 	background: var(--bg);
 }
 
-* {
-	font-family: 'Youtube Sans'
-	@font-face {
-  font-family: 'Graublau Web';
-  src: url('GraublauWeb.eot');
-  src: local('Graublau Web Regular'), local('Graublau Web'),
-    url("GraublauWeb.woff") format("woff"),
-    url("GraublauWeb.otf") format("opentype"),
-    url("GraublauWeb.svg#grablau") format("svg");
-}
-
+@font-face {
+  font-family: 'Youtube Sans';
+  src: url('YouTube-Sans-Medium.eot');
+  src: local('YouTube-Sans-Bold'), local('Youtube Sans'),
+    url(YouTube-Sans-Bold.otf") format("opentype"),
 }
 
 .cont {
