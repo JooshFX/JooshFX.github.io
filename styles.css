@@ -22,7 +22,7 @@ body {
 
 @font-face{
     local('Youtube Sans'), 
-    local('Youtube Sans'),
+    local('Youtube-Sans'),
     font-family:'youtube_sansbold';
     src: url('youtube-sans-bold-webfont.woff2') format('woff2'),
          url('youtube-sans-bold-webfont.woff') format('woff');
