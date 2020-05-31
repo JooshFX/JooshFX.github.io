@@ -1,7 +1,12 @@
 :root {
 	--bg: #111;
 	--fg: white;
-	--hl: #D75C51;
+	--hl: #FF594A;
+}
+
+::selection {
+  color: white;
+  background: #FF7E75;
 }
 
 .preload * {
@@ -16,13 +21,18 @@ body {
 }
 
 * {
-	font-family: 'Rubik', sans-serif;
+	font-family: 'Youtube Sans'
+
 }
 
 .cont {
-	margin-left: 32.5vw;
-	width: 35vw;
+	margin-left: 31.5vw;
+	width: 38vw;
 	text-align: justify;
+}
+
+.mover {
+	margin-left: 7vw
 }
 
 .maintitle {
@@ -55,24 +65,26 @@ li {
 
 .btn {
 	display: inline-block;
-	width: 10vw;
+	width: 9vw;
 	text-align: center;
 	text-decoration: none;
 	font-size: 1.5vw;
 	padding: .3vw .8vw;
 	border: .15vw solid var(--hl);
-	border-radius: .1vw;
+	border-radius: 1vw;
 	color: var(--hl);
-	box-shadow: inset 0 0 0 0 var(--hl);
+	margin-right:1vw;
 	-webkit-transition: ease-out 0.3s;
 	-moz-transition: ease-out 0.3s;
 	transition: ease-out 0.3s;
 }
 
 .btn:hover {
+	transform: translate(0px, -4px);
+	color: black;
 	color: var(--bg);
-	box-shadow: inset 12vw 0 0 0 var(--hl);
-	/* background: var(--hl); */
+	background-color:#FF594A;
+	x-shadow: inset 12vw 0 0 0 var(--hl);
 }
 
 .vidcont {
@@ -103,6 +115,13 @@ ul.navbar a {
 	font-size: 1.5vw;
 	padding: 0 .8vw;
 	color: var(--hl);
+	transition-duration: 0.5s;
+}
+
+.navbar a:hover {
+	color: white;
+	color: white;
+	transition-duration: 0.5s;
 }
 
 @media screen and (orientation: portrait) {
@@ -138,17 +157,17 @@ ul.navbar a {
 	}
 
 	p {
-		font-size: 3vw;
+		font-size: 4vw;
 	}
 
 	.btn {
-		font-size: 5vw;
-		width: 50vw;
-		padding: 1.5vw .8vw;
+	    font-size: 5vw;	
+		width: 30vw;
+		padding: 9px .8vw;
 		border: .6vw solid var(--hl);
-		border-radius: .1vw;
-		cursor: pointer;
-	}
+		border-radius: 4vw;
+		margin-right:4vw;
+		cursor: pointer; }
 
 	.btn:hover {
 		box-shadow: inset 0 0 0 0;
@@ -163,4 +182,42 @@ ul.navbar a {
 		margin-bottom: 10vh;
 	}
 
+}
+body{
+	margin:0;
+	padding:0;
+	font-family:"arial",heletica,sans-serif;
+	font-size:12px;
+    background: #000000 url('file:///D:/Desktop/Techy/Website%20Based%20Projects/JooshFX%20Site%20Fix/plus.png') repeat 0 0;
+	-webkit-animation: 10s linear 0s normal none infinite animate;
+	-moz-animation: 10s linear 0s normal none infinite animate;
+	-ms-animation: 10s linear 0s normal none infinite animate;
+	-o-animation: 10s linear 0s normal none infinite animate;
+	animation: 10s linear 0s normal none infinite animate;
+ 
+}
+ 
+@-webkit-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 500px;}
+}
+ 
+@-moz-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 490px 490px;}
+}
+ 
+@-ms-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 490px 490px;}
+}
+ 
+@-o-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 490px 490px;}
+}
+ 
+@keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 490px 490px;}
 }
