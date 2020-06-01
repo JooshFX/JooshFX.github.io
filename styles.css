@@ -1,4 +1,4 @@
-:root {
+	:root {
 	--bg: #111;
 	--fg: white;
 	--hl: #FF594A;
@@ -19,6 +19,10 @@
 body {
 	background: var(--bg);
 }
+
+.phone {
+	   padding-left: 7.5vw;
+	}
 
 *{
     font-family:"Product Sans";
@@ -71,8 +75,8 @@ li {
 	padding: .3vw .8vw;
 	border: .15vw solid var(--hl);
 	border-radius: 1vw;
-	color: var(--hl);
 	margin-right:1vw;
+	color: var(--hl);
 	-webkit-transition: ease-out 0.3s;
 	-moz-transition: ease-out 0.3s;
 	transition: ease-out 0.3s;
@@ -117,9 +121,20 @@ ul.navbar a {
 	transition-duration: 0.5s;
 }
 
+ul.navbar p {
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.5vw;
+	padding: 0 .8vw;
+	color: var(--hl);
+	transition-duration: 0.5s;
+}
+
+
 .navbar a:hover {
 	color: white;
-	color: white;
+	transform:translate(0px,-0.5vw);
 	transition-duration: 0.5s;
 }
 
@@ -132,6 +147,10 @@ ul.navbar a {
 	ul.navbar a {
 		font-size: 5vw;
 		padding: 0 2vw;
+	}
+	
+	.footer {
+		text-si
 	}
 
 	.cont {
@@ -159,18 +178,26 @@ ul.navbar a {
 		font-size: 4vw;
 	}
 
+	.footer p {
+	margin-right:12%;	
+	}
+	
 	.btn {
-	    font-size: 5vw;	
-		width: 30vw;
-		padding: 9px .8vw;
+	    font-size: 4.6vw;	
+		width: 25vw;
+		padding: 1.5vw 1.5vw;
 		border: .6vw solid var(--hl);
 		border-radius: 4vw;
-		margin-right:4vw;
-		cursor: pointer; }
+		cursor: pointer;
+		transform:translate(-6px,0px);
+		margin-right:6.4vw;
+	}
+	   
 
 	.btn:hover {
 		box-shadow: inset 0 0 0 0;
 		color: var(--hl);
+		transform:translate(-5px,-5px);
 	}
 
 	ul h2 {
@@ -180,12 +207,17 @@ ul.navbar a {
 	li {
 		margin-bottom: 10vh;
 	}
+	
+	.phone {
+	   padding-left: 7vw;
+	}
 
 }
+
 body{
 	margin:0;
 	padding:0;
-	font-family:"arial",heletica,sans-serif;
+	font-family:"arial",helvetica,sans-serif;
 	font-size:12px;
     background: #000000 url('plus.png') repeat 0 0;
 	-webkit-animation: 10s linear 0s normal none infinite animate;
@@ -220,3 +252,13 @@ body{
 	from {background-position:0 0;}
 	to {background-position: 490px 490px;}
 }
+
+.footer {
+	   position: fixed;
+	   background-color: rgba(255,0,0,0.1);	
+	   bottom: 0px;
+	   width: 100%;	
+	   text-align: center;
+	   padding-top:1.6vh;
+	   padding-bottom:1.6vh;
+	  }
