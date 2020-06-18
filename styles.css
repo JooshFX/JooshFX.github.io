@@ -20,6 +20,8 @@ body {
 	background: var(--bg);
 }
 
+
+
 .phone {
 	   padding-left: 7.5vw;
 	}
@@ -35,7 +37,7 @@ body {
 }
 
 .mover {
-	margin-left: 7vw
+	margin-left: 7.5vw
 }
 
 .maintitle {
@@ -47,7 +49,7 @@ body {
 
 p {
 	color: var(--fg);
-	font-size: 1.5vw;
+	font-size: 1.4vw;
 	margin: 0;
 }
 
@@ -83,7 +85,7 @@ li {
 }
 
 .btn:hover {
-	transform: translate(0px, -4px);
+	transform: translate(0px, -0.25vw);
 	color: black;
 	color: var(--bg);
 	background-color:#FF594A;
@@ -108,7 +110,7 @@ li {
 ul.navbar {
 	margin-top: 3vh;
 	margin-bottom: -5vh;
-	text-align: center;
+	text-align: center;	
 }
 
 ul.navbar a {
@@ -116,7 +118,7 @@ ul.navbar a {
 	text-align: center;
 	text-decoration: none;
 	font-size: 1.5vw;
-	padding: 0 .8vw;
+	padding: 0.5vw;
 	color: var(--hl);
 	transition-duration: 0.5s;
 }
@@ -126,7 +128,7 @@ ul.navbar p {
 	text-align: center;
 	text-decoration: none;
 	font-size: 1.5vw;
-	padding: 0 .8vw;
+	padding: 0vw;
 	color: var(--hl);
 	transition-duration: 0.5s;
 }
@@ -134,23 +136,41 @@ ul.navbar p {
 
 .navbar a:hover {
 	color: white;
-	transform:translate(0px,-0.5vw);
-	transition-duration: 0.5s;
+	transform:translate(0px,-0.3vw);
+	transform:scale(1.4,1.4);
+	padding-right:2vw;
+	padding-left:2vw;
+	transition-duration: 0.35s;
+	filter: drop-shadow(0px 0px 0.4vw white);
+}
+
+.footer a img{
+transition-duration: 0.4s;
+	
+}
+
+.footer a img:hover{
+	-webkit-transition: 0.4s;
+	-moz-transition: 0.4s;
+	transition: 0.4s;
+	transform:scale(1.1,1.1);
+	filter:brightness(290%);	
 }
 
 @media screen and (orientation: portrait) {
-
 	ul.navbar {
 		margin-top: 5vh;
+		transition:0.3s;
 	}
 
 	ul.navbar a {
 		font-size: 5vw;
-		padding: 0 2vw;
+		padding: 2vw;
 	}
 	
 	.footer {
-		text-si
+		padding-left:0vw;
+		padding-right:35vw;
 	}
 
 	.cont {
@@ -177,27 +197,34 @@ ul.navbar p {
 	p {
 		font-size: 4vw;
 	}
+	
+	ul.navbar p {
+	color: #FF594A;
+	font-size: 5vw;
+	margin: 0;
+}
 
-	.footer p {
-	margin-right:12%;	
+	.footer p{
+	  padding-right:6vh
 	}
 	
 	.btn {
 	    font-size: 4.6vw;	
-		width: 25vw;
+		width: 28vw;
 		padding: 1.5vw 1.5vw;
 		border: .6vw solid var(--hl);
 		border-radius: 4vw;
 		cursor: pointer;
-		transform:translate(-6px,0px);
-		margin-right:6.4vw;
+		transform:translate(0vw,0vw);
+		color: #FF594A;
 	}
 	   
 
 	.btn:hover {
 		box-shadow: inset 0 0 0 0;
-		color: var(--hl);
-		transform:translate(-5px,-5px);
+		color: black;
+		color: var(--bg);
+		transform:translate(0vw,-1vw);
 	}
 
 	ul h2 {
@@ -259,6 +286,6 @@ body{
 	   bottom: 0px;
 	   width: 100%;	
 	   text-align: center;
-	   padding-top:1.6vh;
-	   padding-bottom:1.6vh;
+	   padding-top:0.6vw;
+	   padding-bottom:0.4vw;
 	  }
